@@ -21,7 +21,8 @@ import UseAnimations from 'react-useanimations'
 import arrow from 'react-useanimations/lib/arrowUp'
 import queryString from 'query-string'
 //Settings
-import { disableSocialAuth } from '../../../developerSettings'
+
+const disableSocialAuth = false
 
 const LoginPage = ({ setUserLoggedIn }: { setUserLoggedIn: any }) => {
 
