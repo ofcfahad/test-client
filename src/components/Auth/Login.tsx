@@ -25,7 +25,7 @@ const Login = ({ userName, setUserName, userPassword, setUserPassword, setUserEm
 
     const authenticateUser = async () => {
         try {
-            const apiResponse = await axios.post(`/server/api/authenticateUser`, { userName: userNameInputController, userPassword: userPasswordInputController });
+            const apiResponse = await axios.post(`https://project-management-server-rose.vercel.app/api/authenticateUser`, { userName: userNameInputController, userPassword: userPasswordInputController });
             setResponse(apiResponse.data.message)
         } catch (error) {
             console.log(error);
